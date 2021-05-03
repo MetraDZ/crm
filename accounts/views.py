@@ -21,6 +21,7 @@ def registerPage(request):
 
 			group = Group.objects.get(name = 'customer')
 			user.groups.add(group)
+			#zdarova
 
 			messages.success(request, f'Account was created for {username}')
 
